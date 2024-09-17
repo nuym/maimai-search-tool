@@ -36,7 +36,7 @@ def convert_all_xml_to_json(xml_folder, output_folder):
 
             print(f"Converted {filename} to {json_filename}")
 
-# 使用示例
+
 xml_folder = 'C:/Users/nuym/Desktop/maimai-search-tool/xml'  # XML 文件夹路径
 output_folder = 'C:/Users/nuym/Desktop/maimai-search-tool/json'  # 输出 JSON 文件夹路径
 
