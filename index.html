@@ -19,6 +19,7 @@
             height: 100vh;
             text-align: center;
         }
+    
         .container {
             background-color: white;
             border-radius: 16px;
@@ -27,13 +28,15 @@
             width: 450px;
             max-width: 100%;
         }
+    
         h1 {
             font-size: 24px;
             margin-bottom: 24px;
             color: #333;
         }
+    
         select, input, button {
-            width: calc(100% - 70px);  
+            width: calc(100% - 70px);
             padding: 12px;
             margin-bottom: 16px;
             font-size: 16px;
@@ -42,8 +45,9 @@
             outline: none;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
+    
         input {
-            width: calc(100% - 100px);  
+            width: calc(100% - 100px);
             padding: 12px;
             margin-bottom: 16px;
             font-size: 16px;
@@ -52,8 +56,9 @@
             outline: none;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
+    
         button {
-            width: calc(100% - 300px);  
+            width: calc(100% - 300px);
             padding: 12px;
             margin-bottom: 16px;
             font-size: 16px;
@@ -61,40 +66,66 @@
             border-radius: 12px;
             outline: none;
             transition: border-color 0.2s, box-shadow 0.2s;
-        }
-        select:hover, input:hover, button:hover {
-            border-color: #007aff;
-            box-shadow: 0 0 8px rgba(0, 122, 255, 0.2);
-        }
-        select:focus, input:focus {
-            border-color: #007aff;
-            box-shadow: 0 0 8px rgba(0, 122, 255, 0.4);
-        }
-        button {
             background-color: #007aff;
             color: white;
             border: none;
             cursor: pointer;
         }
+    
         button:hover {
             background-color: #005ecb;
         }
+    
         button:active {
             background-color: #004ba0;
         }
+    
+        select:hover, input:hover, button:hover {
+            border-color: #007aff;
+            box-shadow: 0 0 8px rgba(0, 122, 255, 0.2);
+        }
+    
+        select:focus, input:focus {
+            border-color: #007aff;
+            box-shadow: 0 0 8px rgba(0, 122, 255, 0.4);
+        }
+    
         #result {
             margin-top: 20px;
             font-weight: bold;
             color: #333;
             min-height: 20px;
-            max-height: 200px;  /* 设置最大高度 */
-            overflow-y: auto;   /* 启用滚动条 */
+            max-height: 200px;
+            overflow-y: auto;
             padding-top: 10px;
             border-top: 1px solid #ddd;
         }
+    
         #result div {
             padding: 8px 0;
             border-bottom: 1px solid #eee;
+        }
+    
+        /* 手机端样式 */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+    
+            h1 {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+    
+            select, input, button {
+                font-size: 14px;
+                padding: 10px;
+            }
+    
+            button {
+                padding: 10px;
+            }
         }
     </style>
 </head>
